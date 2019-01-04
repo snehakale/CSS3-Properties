@@ -1,4 +1,4 @@
-﻿*{
+﻿* {
 	box-sizing: border-box;
 }
 
@@ -13,15 +13,15 @@ h2 {
 
 .section {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	width: 100%;
 }
 
 .container {
-	flex: 1;
-	padding: 5px;
-	margin: 5px;
-	width: 50%;
+	padding: 2px;
+	margin: 5px 10px;
+	width: 40%;
 }
 
 .header {
@@ -31,11 +31,10 @@ h2 {
 
 .common-div-style {
 	width: 100%;
-	height: 65px;
+	height: 75px;
 	border: grey solid 2px;
 	background: #ccffff;
 	text-align: center;
-	align-content: center;
 }
 
 .common-text-style {
@@ -43,7 +42,8 @@ h2 {
 	color: #2c4060;
 	font-size: 15px;
 	font-weight: bold;
-	text-align: justify;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .div1:hover {
@@ -55,7 +55,7 @@ h2 {
 }
 
 .div2:hover {
-	width: 25%;
+	width: 40%;
 	background: #66c2ff;
 	font: black 35px; 
 }
@@ -73,10 +73,48 @@ h2 {
 }
 
 .div6 {
-	text-shadow: 2px 2px grey;
+	border-image: url('C:/Users/Sneha/Desktop/visual studio projects/sampleCSS/images/border.png') 2 stretch; 
 }
 
 .div7 {
+	text-shadow: 2px 2px grey;
+}
+
+.div8 {
 	background-color: #ffffb3;
 	box-shadow: 5px 5px;
+}
+
+.vertical {
+	writing-mode: vertical-rl;
+}
+
+.div10 {
+	column-count: 3;
+	column-gap: 5px;
+	column-rule-style: dashed;
+}
+
+.div11, .div12 {
+	height: 100px;
+}
+
+#original, 
+#transformed,
+#original3D, 
+#transformed3D {
+	width: 35%;
+	height: 35px;
+	background-color: #ffccff;
+	border: 2px dashed #6666ff;
+	padding: 2px;
+	margin: 2px;
+}
+
+#transformed {
+   transform: translate(60px,5px); 
+}
+
+#transformed3D {
+	transform: rotateX(160deg);
 }
