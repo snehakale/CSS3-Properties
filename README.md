@@ -1,6 +1,7 @@
 ## Project Title 
 **CSS3 Properties**
-This project shows a simple web page containing examples of few propertes of CSS3.
+
+This project contains a simple web page displaying examples of few properties of CSS3.
 
 ## Pre-Requisite and Installation
 1. Download / Clone the given Github Project.
@@ -21,3 +22,19 @@ This file contains different rules for different selectors from _index.html_ fil
 `#transformed {
    transform: translate(60px,5px); 
 }
+`
+## References 
+1. [CSS Opacity](https://www.w3schools.com/css/css_image_transparency.asp)
+2. [CSS Transitions](https://www.w3schools.com/css/css3_transitions.asp)
+3. [CSS Gradients](https://www.w3schools.com/css/css3_gradients.asp)
+4. [CSS Rounded Corners](https://www.w3schools.com/css/css3_borders.asp)
+5. [CSS Border Images](https://www.w3schools.com/css/css3_border_images.asp)
+6. [CSS Shadows](https://www.w3schools.com/css/css3_shadows.asp)
+7. [CSS Text Effects](https://www.w3schools.com/css/css3_text_effects.asp)
+8. [CSS Multiple Columns](https://www.w3schools.com/css/css3_multiple_columns.asp)
+9. [CSS 2D Transforms](https://www.w3schools.com/css/css3_2dtransforms.asp)
+10. [CSS 3D Transforms](https://www.w3schools.com/css/css3_3dtransforms.asp)
+11. [CSS Tutorial](https://www.w3schools.com/css/default.asp)
+
+## Author
+Sneha Kale
