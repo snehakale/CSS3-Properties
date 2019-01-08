@@ -6,8 +6,8 @@ This project contains a simple web page displaying examples of few properties of
 ## Pre-Requisite and Installation
 1. Download / Clone the given Github Project.
 2. Unzip the folders and files.
-3. Edit the paths for links to a css file and images in the **html / index.html**. 
-Example : `<link href="...(your path)...../css/style.css" ... > `
+3. Edit the paths for links and images in **html / index.html** and **css/style.css**. 
+Example : `<link href="...[path]...../css/style.css" ... > `
 4. To run the project, run the file **index.html**.
 
 ## Code Examples 
