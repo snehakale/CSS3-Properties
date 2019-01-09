@@ -16,6 +16,7 @@ h2 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
+	margin-top: 50px;
 }
 
 .container {
@@ -26,7 +27,27 @@ h2 {
 
 .header {
 	padding: 5px;
-	margin: 5px;
+	margin-left: 5px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid grey;
+	background: #d1e0e0;
+	width: 100%;
+	z-index: 1;
+}
+
+.common-button-style {
+	width: 200px;
+	height: 25px;
+	border-radius: 10px;
+	border: 2px solid grey;
+	background-color: #d1e0e0;
+	margin-top: 10px;
+}
+
+.common-button-style:hover{
+	cursor: pointer;
 }
 
 .common-div-style {
@@ -73,7 +94,7 @@ h2 {
 }
 
 .div6 {
-	border-image: url('.......[path]...../images/border.png') 2 stretch; 
+	border-image: url('....[path]..../images/border.png') 2 stretch; 
 }
 
 .div7 {
@@ -117,4 +138,56 @@ h2 {
 
 #transformed3D {
 	transform: rotateX(160deg);
+}
+
+.modal-window {
+	display: none;
+	z-index: 1;
+	border: 5px solid grey;
+	position: fixed;
+	background-color: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.modal-div {
+	width: 80%;
+	height: auto;
+	position: auto;
+	margin: auto;
+	margin-top: 15%;
+	padding: 10px;
+	border: 5px solid #114351;
+	background-color: #d1e0e0;
+	overflow: auto;
+	align-content: center;
+}
+
+.modal-content {
+	text-align: center;
+	float: left;
+	margin: 20px 5px 5px 20px;
+}
+
+.close-button {
+	float: right;
+	margin: 5px;
+	padding: 1px;
+	color: #2c4060;
+	font-size: 25px;
+	font-weight: bold;
+	border: 1px solid grey;
+}
+
+.close-button:hover {
+	cursor: pointer;
+}
+
+.cearfix::after {
+	content: '';
+	display: table;
+	clear: both;
 }
