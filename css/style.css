@@ -1,16 +1,28 @@
-﻿* {
+﻿/* Rule for whole page */
+* {
 	box-sizing: border-box;
 }
 
+/* Rule for body part */
 body {
 	padding: 0;
 	margin: 0;
 }
 
-h2 {
-	color: blue;
+/* Rule for Header part */
+.header {
+	padding: 5px;
+	margin-left: 5px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid grey;
+	background: #d1e0e0;
+	width: 100%;
+	z-index: 1;
 }
 
+/* Rules for Section part */
 .section {
 	display: flex;
 	flex-direction: row;
@@ -25,18 +37,6 @@ h2 {
 	width: 40%;
 }
 
-.header {
-	padding: 5px;
-	margin-left: 5px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	border-bottom: 2px solid grey;
-	background: #d1e0e0;
-	width: 100%;
-	z-index: 1;
-}
-
 .common-button-style {
 	width: 200px;
 	height: 25px;
@@ -46,7 +46,7 @@ h2 {
 	margin-top: 10px;
 }
 
-.common-button-style:hover{
+.common-button-style:hover {
 	cursor: pointer;
 }
 
@@ -78,7 +78,7 @@ h2 {
 .div2:hover {
 	width: 40%;
 	background: #66c2ff;
-	font: black 35px; 
+	font: 35px black; 
 }
 
 .div3 {
@@ -116,7 +116,8 @@ h2 {
 	column-rule-style: dashed;
 }
 
-.div11, .div12 {
+.div11, 
+.div12 {
 	height: 100px;
 }
 
@@ -140,6 +141,7 @@ h2 {
 	transform: rotateX(160deg);
 }
 
+/* Rules for Modal Box */
 .modal-window {
 	display: none;
 	z-index: 1;
@@ -154,9 +156,9 @@ h2 {
 }
 
 .modal-div {
-	width: 80%;
+	width: 60%;
 	height: auto;
-	position: auto;
+	position: relative;
 	margin: auto;
 	margin-top: 15%;
 	padding: 10px;

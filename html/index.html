@@ -1,106 +1,112 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>CSS Properties</title>
-	<link href=".....[path]..../css/style.css" type="text/css" rel="stylesheet"  />
-	<script src="...[path]..../js/app.js"></script>
-</head>
-<body>
-	<div class="header">
-		<span class="common-text-style"> CSS3 Properties </span>
-	</div>
-	<div class="section">
-		<div class="modal-window" id="modal">
-			<div class="modal-div" id="modal-div">
-				<span class="close-button" onclick="closeModal()">&times;</span>
-				<span class="common-text-style modal-content" id="modal-content"></span>
-				<span class="clearfix"></span>
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS Properties</title>
+		<!-- Link to stylesheet -->
+		<link href="....[path]..../css/style.css" type="text/css" rel="stylesheet" />
+		<!-- Link to a javascript file -->
+		<script src="....[path]..../js/app.js"></script>
+	</head>
+	<body>
+		<!-- Header Part -->
+		<div class="header">
+			<span class="common-text-style"> CSS3 Properties </span>
+		</div>
+		<!-- Section Part -->
+		<div class="section">
+			<!-- Modal Box -->
+			<div class="modal-window" id="modal">
+				<div class="modal-div" id="modal-div">
+					<span class="close-button" onclick="closeModal()">&times;</span>
+					<span class="common-text-style modal-content" id="modal-content"></span>
+					<span class="clearfix"></span>
+				</div>
+			</div>
+			<!-- Containers -->
+			<div class="container">
+				<div class="div1 common-div-style">
+					<span class="common-text-style"> Opacity effect on hover </span>
+				</div>
+				<button id="button1" class="common-button-style common-text-style" onclick="showCodeWindow('button1')">Show Sample Code</button>
+			</div>
+			<div class="container">
+				<div class="div2 common-div-style">
+					<span class="common-text-style"> Transition effect on hover </span>
+				</div>
+				<button id="button2" class="common-button-style common-text-style" onclick="showCodeWindow('button2')">Show Sample Code</button>
+			</div>
+			<div class="container">
+				<div class="div3 common-div-style">
+					<span class="common-text-style"> Linear Gradient </span>
+				</div>
+				<button id="button3" class="common-button-style common-text-style" onclick="showCodeWindow('button3')">Show Sample Code</button>
+			</div>
+			<div class="container">
+				<div class="div4 common-div-style">
+					<span class="common-text-style"> Radial Gradient </span>
+				</div>
+				<button id="button4" class="common-button-style common-text-style" onclick="showCodeWindow('button4')">Show Sample Code</button>
+			</div>
+			<div class="container">
+				<div class="div5 common-div-style">
+					<span class="common-text-style"> Rounded Corners </span>
+				</div>
+				<button id="button5" class="common-button-style common-text-style" onclick="showCodeWindow('button5')">Show Sample Code</button>
+			</div>
+			<div class="container">
+				<div class="div6 common-div-style">
+					<span class="common-text-style"> Border Image </span>
+				</div>
+				<button id="button6" class="common-button-style common-text-style" onclick="showCodeWindow('button6')">Show Sample Code</button>	
+			</div>
+			<div class="container">
+				<div class="div7 common-div-style">
+					<span class="common-text-style"> Text Shadows </span>
+				</div>
+				<button id="button7" class="common-button-style common-text-style" onclick="showCodeWindow('button7')">Show Sample Code</button>	
+			</div>
+			<div class="container">
+				<div class="div8 common-div-style">
+					<span class="common-text-style"> Box Shadows </span>
+				</div>
+				<button id="button8" class="common-button-style common-text-style" onclick="showCodeWindow('button8')">Show Sample Code</button>	
+			</div>
+			<div class="container">
+				<div class="div9 common-div-style">
+					<span class="common-text-style">  
+						Some text Horizontal,Some text 
+						<span class="vertical">Vertical</span> 
+						with Text Effect -Writng <span class="vertical"> Mode </span>
+					</span>
+				</div>
+				<button id="button9" class="common-button-style common-text-style" onclick="showCodeWindow('button9')">Show Sample Code</button>	
+			</div>
+			<div class="container">
+				<div class="div10 common-div-style common-text-style">
+					CSS is Cascading Stye sheet.CSS saves a lot of work. 
+					It can control the layout of multiple web pages all at once.This is with 
+					multi column layout.
+				</div>
+				<button id="button10" class="common-button-style common-text-style" onclick="showCodeWindow('button10')">Show Sample Code</button>	
+			</div>
+			<div class="container">
+				<div class="div11 common-div-style common-text-style">
+					<span>2D Trasformation with Translate Example</span>
+					<div id="original">Original</div>
+					<div id="transformed">Transformed</div>
+				</div>
+				<button id="button11" class="common-button-style common-text-style" onclick="showCodeWindow('button11')">Show Sample Code</button>	
+			</div>
+			<div class="container">
+				<div class="div12 common-div-style common-text-style">
+					<span>3D Trasformation with RotateX Example</span>
+					<div id="original3D">RotateX 160deg</div>
+					<div id="transformed3D">RotateX 160deg</div>
+				</div>
+				<button id="button12" class="common-button-style common-text-style" onclick="showCodeWindow('button12')">Show Sample Code</button>	
 			</div>
 		</div>
-		<div class="container">
-			<div class="div1 common-div-style">
-				<span class="common-text-style"> Opacity effect on hover </span>
-			</div>
-			<button id="button1" class="common-button-style common-text-style" onclick="showCodeWindow('button1')">Show Sample Code</button>
-		</div>
-		<div class="container">
-			<div class="div2 common-div-style">
-				<span class="common-text-style"> Transition effect on hover </span>
-			</div>
-			<button id="button2" class="common-button-style common-text-style" onclick="showCodeWindow('button2')">Show Sample Code</button>
-		</div>
-		<div class="container">
-			<div class="div3 common-div-style">
-				<span class="common-text-style"> Linear Gradient </span>
-			</div>
-			<button id="button3" class="common-button-style common-text-style" onclick="showCodeWindow('button3')">Show Sample Code</button>
-		</div>
-		<div class="container">
-			<div class="div4 common-div-style">
-				<span class="common-text-style"> Radial Gradient </span>
-			</div>
-			<button id="button4" class="common-button-style common-text-style" onclick="showCodeWindow('button4')">Show Sample Code</button>
-		</div>
-		<div class="container">
-			<div class="div5 common-div-style">
-				<span class="common-text-style"> Rounded Corners </span>
-			</div>
-			<button id="button5" class="common-button-style common-text-style" onclick="showCodeWindow('button5')">Show Sample Code</button>
-		</div>
-		<div class="container">
-			<div class="div6 common-div-style">
-				<span class="common-text-style"> Border Image </span>
-			</div>
-			<button id="button6" class="common-button-style common-text-style" onclick="showCodeWindow('button6')">Show Sample Code</button>	
-		</div>
-		<div class="container">
-			<div class="div7 common-div-style">
-				<span class="common-text-style"> Text Shadows </span>
-			</div>
-			<button id="button7" class="common-button-style common-text-style" onclick="showCodeWindow('button7')">Show Sample Code</button>	
-		</div>
-		<div class="container">
-			<div class="div8 common-div-style">
-				<span class="common-text-style"> Box Shadows </span>
-			</div>
-			<button id="button8" class="common-button-style common-text-style" onclick="showCodeWindow('button8')">Show Sample Code</button>	
-		</div>
-		<div class="container">
-			<div class="div9 common-div-style">
-				<span class="common-text-style">  
-					Some text Horizontal,Some text 
-					<span class="vertical">Vertical</span> 
-					with Text Effect -Writng <span class="vertical"> Mode </span>
-				</span>
-			</div>
-			<button id="button9" class="common-button-style common-text-style" onclick="showCodeWindow('button9')">Show Sample Code</button>	
-		</div>
-		<div class="container">
-			<div class="div10 common-div-style common-text-style">
-				CSS is Cascading Stye sheet.CSS saves a lot of work. 
-				It can control the layout of multiple web pages all at once.This is with 
-				multi column layout.
-			</div>
-			<button id="button10" class="common-button-style common-text-style" onclick="showCodeWindow('button10')">Show Sample Code</button>	
-		</div>
-		<div class="container">
-			<div class="div11 common-div-style common-text-style">
-				<span>2D Trasformation with Translate Example</span>
-				<div id="original">Original</div>
-				<div id="transformed">Transformed</div>
-			</div>
-			<button id="button11" class="common-button-style common-text-style" onclick="showCodeWindow('button11')">Show Sample Code</button>	
-		</div>
-		<div class="container">
-			<div class="div12 common-div-style common-text-style">
-				<span>3D Trasformation with RotateX Example</span>
-				<div id="original3D">RotateX 160deg</div>
-				<div id="transformed3D">RotateX 160deg</div>
-			</div>
-			<button id="button12" class="common-button-style common-text-style" onclick="showCodeWindow('button12')">Show Sample Code</button>	
-		</div>
-	</div>
-</body>
+	</body>
 </html>
