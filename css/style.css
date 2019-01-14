@@ -188,7 +188,7 @@ body {
 	cursor: pointer;
 }
 
-.cearfix::after {
+.clearfix::after {
 	content: '';
 	display: table;
 	clear: both;
